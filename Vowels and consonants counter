@@ -1,0 +1,12 @@
+text = input("enter a string: ")
+text = text.lower()
+vowels = 0
+consonants = 0
+for char in text:
+    if char >= 'a' and char <= 'z':
+        if char in 'aeiou':
+            vowels = vowels + 1
+        else:
+            consonants = consonants + 1
+print("number of vowels:", vowels)
+print("number of consonants:", consonants)
